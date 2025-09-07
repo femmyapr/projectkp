@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pinjam Berkas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Pinjam Berkas</h1>
+    <nav>
+      <a href="dashboard_marketing.html">Home</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <select id="jenis" onchange="loadDataBerkas()">
+      <option value="KUR">KUR</option>
+      <option value="KE">KE</option>
+    </select>
+
+    <div id="berkas-options">
+      <!-- Opsi berkas muncul dari JS -->
+    </div>
+
+    <form onsubmit="submitPinjamBerkas(event)">
+      <input type="text" id="noRegis" placeholder="No Registrasi" readonly />
+      <input type="text" id="noBrimen" placeholder="No Brimen" readonly />
+      <input type="text" id="namaNasabah" placeholder="Nama Nasabah" readonly />
+      <input type="text" placeholder="Nama Peminjam" id="namaPeminjam" required />
+      <input type="date" placeholder="Tanggal Kembali" id="tglKembali" required />
+      <button type="submit">SELESAI</button>
+    </form>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

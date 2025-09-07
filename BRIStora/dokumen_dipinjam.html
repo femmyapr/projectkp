@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dokumen Dipinjam - BRIStora</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>DAFTAR ARSIP BERKAS</h1>
+    <nav>
+      <a href="dashboard_adk.html">Home</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <button onclick="location.href='input_berkas.html'">Tambah Berkas</button>
+    <input type="text" id="search" placeholder="Cari nama nasabah..." onkeyup="searchBerkas()">
+
+    <div id="berkas-list">
+      <!-- Berkas akan di-render dari JS -->
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Profile</h1>
+    <nav>
+      <a href="dashboard_adk.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <p><strong>User:</strong> <span id="roleProfile"></span></p>
+    <input type="text" placeholder="User" readonly />
+    <input type="password" placeholder="Password" readonly />
+    <button onclick="logout()">LOGOUT</button>
+  </main>
+
+  <script>
+    document.getElementById("roleProfile").innerText = localStorage.getItem("userRole");
+    function logout() {
+      localStorage.clear();
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

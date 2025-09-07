@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input Dokumen - BRIStora</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Input Dokumen</h1>
+    <nav>
+      <a href="dashboard_adk.html">Home</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="no-data">
+      <p>Belum Ada Berkas yang Di Input</p>
+      <button onclick="showForm()">INPUT BERKAS</button>
+    </div>
+
+    <form id="form-berkas" style="display: none;" onsubmit="saveBerkas(event)">
+      <input type="text" placeholder="No. Registrasi" id="regis" required />
+      <input type="text" placeholder="No. Brimen" id="brimen" required />
+      <input type="text" placeholder="Nama Nasabah" id="nasabah" required />
+      <input type="text" placeholder="No. Rekening Pinjaman" id="rekening" required />
+      <select id="jenisPinjaman">
+        <option value="KE">KE</option>
+        <option value="KUR">KUR</option>
+      </select>
+      <button type="submit">SELESAI</button>
+    </form>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

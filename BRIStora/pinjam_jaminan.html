@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pinjam Jaminan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Pinjam Jaminan</h1>
+    <nav>
+      <a href="dashboard_marketing.html">Home</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <select id="jenisJaminan">
+      <option value="SHM">SHM</option>
+      <option value="BPKB">BPKB</option>
+    </select>
+
+    <form onsubmit="submitPinjamJaminan(event)">
+      <input type="text" id="noJaminan" placeholder="No Jaminan" required />
+      <input type="text" id="brimenJaminan" placeholder="No Brimen" required />
+      <input type="text" id="namaNasabahJaminan" placeholder="Nama Nasabah" required />
+      <input type="text" placeholder="Nama Peminjam" id="peminjamJaminan" required />
+      <input type="date" placeholder="Tanggal Kembali" id="tglKembaliJaminan" required />
+      <button type="submit">SELESAI</button>
+    </form>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
